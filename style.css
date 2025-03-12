@@ -1,0 +1,95 @@
+body {  
+    background-color: #041821;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+} 
+.icons{
+ color: white;
+}     
+h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+p {
+    color: gray;
+}
+#text {
+    color: #16d99c;
+}
+#selectioner {
+    background-color: #28c89a;
+
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 0.25rem; 
+    width:80%;
+    margin: 0 auto; 
+    align-content: center; 
+
+}
+.mycontainer {
+   width: 50%;
+   margin: 0 auto;
+   height: 100px;
+
+
+  }
+
+.mycontainer div {
+    text-align: center;
+    color: white;
+    width: 20%;  
+    float:left; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:426px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .mycontainer{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 5rem; 
+        width:80%;
+        margin: 0 auto; 
+        align-content: center; 
+    }
+}
+
+@media screen and (max-width:769px){
+    .mycontainer{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 5rem; 
+        width:80%;
+        margin: 0 auto; 
+        align-content: center; 
+    }
+}
